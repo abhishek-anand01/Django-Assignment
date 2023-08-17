@@ -29,4 +29,7 @@ mypython/
 docs/build/
 docs/source/_autosummary/
 # env
+.env
+.venv
+env/
 venv/
