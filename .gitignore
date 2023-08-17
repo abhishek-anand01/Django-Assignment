@@ -33,3 +33,4 @@ docs/source/_autosummary/
 .venv
 env/
 venv/
+*.gitignore
