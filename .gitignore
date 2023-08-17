@@ -1,0 +1,7 @@
+# Ignore the .env file
+.env
+
+# Ignore the .bak file
+.bak
+.py.bak
+**/__pycache__
