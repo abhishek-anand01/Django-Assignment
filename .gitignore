@@ -1,7 +1,32 @@
-# Ignore the .env file
+.idea/
 .env
+.log
+.venv/
+.vscode/
+media/
+mypython/
+*.pyc
+**/__pycache__/
+*.sqlite3
+*.zip
+*.parquet
 
-# Ignore the .bak file
-.bak
-.py.bak
-**/__pycache__
+**/.coverage*
+
+# ignore joblib files
+*.joblib
+
+# ignore log files
+**/logs/
+**/*.log
+
+# ignore package version file
+**/_version.py
+
+.vscode/settings.json
+
+# Sphinx documentation
+docs/build/
+docs/source/_autosummary/
+# env
+venv/
