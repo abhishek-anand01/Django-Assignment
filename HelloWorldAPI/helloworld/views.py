@@ -21,3 +21,6 @@ class HelloWorldView(APIView):
 class PersonListView(generics.ListAPIView):
     queryset = Person.objects.all()
     serializer_class = PersonSerializer
+class PersonRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Person.objects.all()
+    serializer_class = PersonSerializer
