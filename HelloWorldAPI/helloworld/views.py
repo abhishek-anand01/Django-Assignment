@@ -7,6 +7,7 @@ from django.http import HttpResponse
 from rest_framework import generics
 from .models import Person
 from .serializers import PersonSerializer
+from drf_spectacular.utils import extend_schema
 class CustomTokenObtainPairView(TokenObtainPairView):
     pass  # No additional modifications needed
 
@@ -19,7 +20,7 @@ class HelloWorldView(APIView):
     authentication_classes = [BasicAuthentication]  # Use Basic Authentication
     permission_classes = [IsAuthenticated]  # Require authentication for this view
     serializer_class = None
-
+    @extend_schema(summary="Hello World API", description="This is a basic API view that returns 'Hello World'.")
     def get(self, request):
         message = "Hello World"
         return HttpResponse(message, content_type='text/plain')
